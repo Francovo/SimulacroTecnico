@@ -13,7 +13,7 @@ export const Form = () => {
         edad: ''
     })
     
-    const {nombre,tipo,deporte,correo,edad, imagen} = deportista
+    const {nombre,deporte,correo,edad, imagen} = deportista
 
     const handleChange = ({ target }) => {
         setDeportista({
@@ -39,6 +39,7 @@ export const Form = () => {
            <form id="formulario" onSubmit={handleSubmit}>
            <h2>Registro de Deportistas</h2>
            <hr/>
+           <div className="color_1">
                <div>
                    <label>Nombre Completo</label>
                    <input id="inputNombre" name="nombre" value={nombre} onChange={handleChange}/>
@@ -50,6 +51,7 @@ export const Form = () => {
                        <option name="Masculono" value="Masculino">Masculino</option>
                        <option name="Femenino" value="Femenino">Femenino</option>
                    </select>
+               </div>
                </div>
                <div className="inputs">
                <div>
