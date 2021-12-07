@@ -13,7 +13,7 @@ export const Form = () => {
         edad: ''
     })
     
-    const {nombre,tipo,deporte,correo,edad, imagen} = deportista
+    const {nombre,deporte,correo,edad, imagen} = deportista
 
     const handleChange = ({ target }) => {
         setDeportista({
